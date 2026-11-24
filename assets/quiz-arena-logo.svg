@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="The Quiz Arena logo">
+  <defs>
+    <linearGradient id="qa-rim" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFD166"/><stop offset=".5" stop-color="#F7B32B"/><stop offset="1" stop-color="#FF6B35"/></linearGradient>
+    <linearGradient id="qa-core" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0F5C8A"/><stop offset="1" stop-color="#062B42"/></linearGradient>
+    <linearGradient id="qa-q" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#CAF0F8"/></linearGradient>
+    <linearGradient id="qa-tail" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFD166"/><stop offset="1" stop-color="#FF6B35"/></linearGradient>
+  </defs>
+  <!-- soft shadow -->
+  <polygon points="60,14 99.8,37 99.8,83 60,106 20.2,83 20.2,37" transform="translate(0 3)" fill="#0B2A3F" stroke="#0B2A3F" stroke-width="14" stroke-linejoin="round" opacity=".28"/>
+  <!-- outer rim -->
+  <polygon points="60,14 99.8,37 99.8,83 60,106 20.2,83 20.2,37" fill="url(#qa-rim)" stroke="url(#qa-rim)" stroke-width="14" stroke-linejoin="round"/>
+  <!-- inner arena -->
+  <polygon points="60,22 92.9,41 92.9,79 60,98 27.1,79 27.1,41" fill="url(#qa-core)" stroke="url(#qa-core)" stroke-width="8" stroke-linejoin="round"/>
+  <polygon points="60,26 89.4,43 89.4,77 60,94 30.6,77 30.6,43" fill="none" stroke="#00B4D8" stroke-width="1.4" stroke-linejoin="round" opacity=".75"/>
+  <!-- glossy highlight -->
+  <path d="M33 45 L60 29.5 L87 45" fill="none" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" opacity=".16"/>
+  <!-- Q -->
+  <circle cx="59" cy="57" r="19" fill="none" stroke="url(#qa-q)" stroke-width="9"/>
+  <path d="M64.5 62.5 L77 75" fill="none" stroke="url(#qa-tail)" stroke-width="10" stroke-linecap="round"/>
+  <!-- spark -->
+  <path d="M56.5 47.5 L58.7 53.3 L64.5 55.5 L58.7 57.7 L56.5 63.5 L54.3 57.7 L48.5 55.5 L54.3 53.3 Z" fill="#F7B32B"/>
+  <path d="M56.5 50 L57.8 54.2 L62 55.5 L57.8 56.8 L56.5 61 L55.2 56.8 L51 55.5 L55.2 54.2 Z" fill="#FFE8C2"/>
+</svg>

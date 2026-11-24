@@ -1,27 +1,14 @@
-# The Quiz Arena — SHS
+# The Quiz Arena
 
-A responsive, installable MCQ game using the supplied palette:
-- `#0F1C3F` deep navy
-- `#526A87` steel blue
-- `#D2B77E` champagne gold
-- `#10131D` midnight
+Installable, offline-capable MCQ quiz game with five standards (Standard-01 to Standard-05), 200 questions each.
+
+Palette: #FF6B35 #F7B32B #F25F5C #FFE8C2 #FFF9F0 #0077B6 #00B4D8 #90E0EF #CAF0F8 #F1FAFE (dark theme uses deep blues derived from #0077B6).
 
 ## Run locally
-Open `index.html` in a browser. For full PWA/offline testing, serve the folder over localhost:
-`python -m http.server 8000`
-Then visit `http://localhost:8000`.
+`python -m http.server 8000` then open http://localhost:8000 (the service worker needs http, not file://).
 
-## Deploy to GitHub Pages
-Upload the contents of this folder to the repository's publishing branch/root. This project uses relative asset paths and works from a GitHub Pages project subpath.
+## Deploy
+Upload the folder contents to the GitHub Pages branch. All paths are relative.
 
-## Gameplay
-Choose a standard on the first screen. The quiz begins immediately. A level advances only after a correct answer. Wrong answers keep the player on the same question and offer a retry. Correct answers trigger a confetti celebration. The included bank contains 12 questions per standard. The deck shuffles and cycles after all questions in that standard have been used, so play can continue indefinitely without repeating within a cycle.
-
-## Offline / install
-The service worker caches the app shell and bundled question bank after the first successful visit. Install is supported through the browser's own install menu where available. The app does not use a remote question-generation service.
-
-## Custom questions
-Edit `questions.js`. Each question needs `id`, `subject`, `question`, four `options`, zero-based `answer`, `explanation`, and `difficulty`.
-
-## Notes
-The supplied bank is an initial starter set, not an exhaustive curriculum or a claim of unlimited unique pre-written questions. Extend it by adding question objects to each standard.
+## Rules
+Each standard unlocks after the previous one is fully solved. A wrong answer brings a different question and the missed one returns a few questions later. Every 10 solved questions clears a level and earns stars.
